@@ -20,6 +20,8 @@ public class LoginTest {
 	public void doLogin() {
 		driver.get("http://www.gmail.com");
 		driver.findElement(By.id("identifierId")).sendKeys("siarikondasiddhu");
+		String title=driver.getTitle();
+		System.out.println(title);
 	}
 
 	@AfterSuite
